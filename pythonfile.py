@@ -50,3 +50,20 @@ print(data.head())
 
 print(data.shape)
 
+# 2. "organize" that file, so we can access columns *or* rows of it easily
+# 2a. access any row "pandas access data by column"
+print(data.iloc[3:5,:])
+# 2b. access any column "pandas access data by row"
+
+print(data.iloc[:3, -2:])
+#print(data.iloc[::-1:4])
+# 2c. access any value "pandas access specific data by location"
+print(data.iloc [3,4])
+#3. compute some "summary statistic" about the dataset
+
+import numpy as np
+
+print(np.mean(data))
+print(np.std(data))
+
+
